@@ -64,3 +64,8 @@ typings/
 ### Sublime files
 *.sublime-project
 *.sublime-workspace
+
+
+### Relay Modern
+__generated__/
+schema/schema.graphql

@@ -1,0 +1,28 @@
+{
+  "name": "hiphopmilitante-web-app",
+  "version": "0.1.0",
+  "description": "Quilombo Brasil Hip Hop Militante",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "relay": "npx relay-compiler --src ./ --exclude '**/.next/**' '**/node_modules/**' '**/test/**'  '**/__generated__/**' --exclude '**/schema/**' --schema ./schema/schema.graphql",
+    "schema": "mkdir -p schema; npx graphql get-schema -e dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "dotenv-webpack": "^1.5.4",
+    "isomorphic-unfetch": "^2.0.0",
+    "next": "latest",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-relay": "latest"
+  },
+  "devDependencies": {
+    "babel-plugin-relay": "latest",
+    "graphql-cli": "latest",
+    "relay-compiler": "latest"
+  }
+}
