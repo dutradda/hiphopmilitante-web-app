@@ -4,15 +4,22 @@ import { withTheme } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import Paper from '@material-ui/core/Paper'
 import Button from '@material-ui/core/Button'
+import AppBar from '../components/AppBar'
 import withData from '../lib/withData'
 import MediaPreview from '../components/MediaPreview'
-import theme from '../theme'
 
 let AppGrid = props => {
 
   return (
     <div>
-      <Grid container spacing={24}>
+      <AppBar />
+    </div>
+  )
+}
+
+/**
+
+<Grid container spacing={24}>
         <Grid item xs={12}>
           <Paper>
             <MediaPreview media={props.getMedia} />
@@ -36,9 +43,8 @@ let AppGrid = props => {
       <Button color="secondary">
         Button 3
       </Button>
-    </div>
-  )
-}
+
+**/
 // AppGrid = withTheme(theme)(AppGrid)
 
 
